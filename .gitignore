@@ -5,6 +5,7 @@ node_modules
 knowledge.iml
 tomcat.8080
 out.txt
+npm-debug.log
 .classpath
 .project
 .settings
