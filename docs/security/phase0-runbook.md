@@ -31,6 +31,13 @@
 ツール未導入やネットワーク制約などで一部コマンドが失敗しても、可能な範囲で結果を保存します。
 失敗の詳細は各出力ファイルに記録されるため、`latest` 配下を確認してください。
 
+### 補足（2026-03-22 時点）
+
+- Maven 依存一覧は `maven-dependency-plugin` を**完全修飾名**で実行するようにしています。
+  - 例: `org.apache.maven.plugins:maven-dependency-plugin:3.6.1:tree`
+- `package-lock.json` が存在しない環境では、`npm audit` 実行前に一時的に lockfile を生成し、実行後に自動削除します。
+  - これにより `ENOLOCK` を回避し、監査レポート取得の成功率を上げます。
+
 ## 5. 次のサブフェーズ
 
 - OWASP Dependency-Check / Trivy などの SCA ツールを CI に統合
