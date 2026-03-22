@@ -22,6 +22,10 @@
 
 ## Planning Documents
 - [EOS対応・脆弱性対応 現状分析と対応計画](docs/eos-vulnerability-modernization-plan.md)
+- [フェーズ0: 依存関係棚卸し・脆弱性可視化 Runbook](docs/security/phase0-runbook.md)
+
+## Security Audit (Phase 0)
+- Run `./scripts/security/phase0-audit.sh` to generate dependency/vulnerability reports under `docs/security/reports/`.
 
 ## Deploy to Heroku
 
