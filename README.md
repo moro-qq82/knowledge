@@ -20,6 +20,9 @@
    - [id/password] user3 / user3
 
 
+## Planning Documents
+- [EOS対応・脆弱性対応 現状分析と対応計画](docs/eos-vulnerability-modernization-plan.md)
+
 ## Deploy to Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/support-project/knowledge)
